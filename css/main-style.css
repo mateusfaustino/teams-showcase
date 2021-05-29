@@ -1,0 +1,96 @@
+ 
+.brands-showcase{
+	display: block;
+	background-color: #fafafa;
+	padding: 24px 0;
+}
+.brands-showcase .showcase-title {
+  max-width: 360px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: calc(100% - 16px);
+   }
+  .brands-showcase .showcase-title .text {
+    background-color: #fafafa;
+    padding: 0 8px;
+    z-index: 1;
+    color: #444444;
+    font-size: 20px;
+    line-height: 120%; 
+    }
+    @media (min-width: 900px) {
+      .brands-showcase .showcase-title .text {
+        font-size: 24px; } }
+  .brands-showcase .showcase-title::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    content: "";
+    background-color: #E0E0E0;
+    height: 1px;
+    width: 100%;
+    margin: 0 10px; }
+
+.brands-showcase .brands__list {
+  padding-top: 16px;
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center; }
+  .brands-showcase .brands__list .brand__item {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 91.875%;
+    margin-bottom: 12px;
+    min-height: 124px; }
+    .brands-showcase .brands__list .brand__item a {
+      height: 17vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none; }
+      .brands-showcase .brands__list .brand__item a .brand__item__image {
+        min-width: 120px;
+        min-height: 106px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 8px;
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 4px; }
+        .brands-showcase .brands__list .brand__item a .brand__item__image img {
+          width: 100%;
+          height: auto; }
+      .brands-showcase .brands__list .brand__item a .brand__item__title {
+        color: #444444;
+        margin: 0;
+        font-size: 12px;
+        line-height: 150%;
+        text-transform: capitalize;
+        font-weight: 400; 
+        font-family: 'Roboto', sans-serif;}
+        @media (min-width: 900px) {
+          .brands-showcase .brands__list .brand__item a .brand__item__title {
+            font-size: 14px; } }
+
+
+
+    @media (min-width: 610px) {
+        .brands-showcase .brands__list {
+            grid-template-columns: 1fr 1fr 1fr;}
+    }
+    @media (min-width: 900px) {
+        .brands-showcase .brands__list {
+            grid-template-columns: 1fr 1fr 1fr 1fr;}
+    }
